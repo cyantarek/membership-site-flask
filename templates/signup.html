@@ -6,58 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.min.css') }}">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md" style="background-color:#1f6bff;color:rgb(255,255,255);">
-        <div class="container-fluid"><a class="navbar-brand" href="#" style="color:rgba(255,255,255,0.9);">Brand</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color:#273dff;color:rgb(255,255,255);">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
-    <div>
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-5 col-md-4"></div>
-                <div class="col-3 col-md-4">
-                    <div class="card">
-                        <div class="card-header" style="background-color:rgba(114,3,255,0.03);">
-                            <h5 class="text-center mb-0">Registration</h5>
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Signup</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <form>
+                <div class="form-group">
+                    <div id="formdiv">
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Name </strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" name="name" placeholder="Name" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">First Name&nbsp;</label><input type="text"></div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Email</strong></p>
                             </div>
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">Last Name&nbsp;</label><input type="text"></div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" name="birthPlace" placeholder="Email" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Country</strong></p>
                             </div>
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">Email &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><input type="text"></div>
+                            <div class="col-md-10 offset-md-1" style="font-family:Roboto, sans-serif;"><select class="form-control" id="country" name="country"></select><select class="form-control" id="state" name="state"></select></div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Password</strong></p>
                             </div>
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">Country &nbsp; &nbsp;&nbsp;</label><input type="text"></div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" placeholder="Password" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 offset-md-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Confirm Password</strong></p>
                             </div>
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">Password &nbsp;&nbsp;</label><input type="text"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="col-form-label">Confirm &nbsp; &nbsp;&nbsp;</label><input type="text"></div>
-                            </div><a class="btn btn-primary" role="button" href="http://www.earlytime.io" style="margin:9px;padding:9px;height:47px;"> Signup</a></div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" placeholder="Confirm password" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                        </div>
+                        <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-12 col-md-4 offset-md-4"><button class="btn btn-danger btn-lg" type="reset" style="font-family:Roboto, sans-serif;">Cancel</button><button class="btn btn-primary btn-lg" type="submit" style="margin-left:16px;">Submit </button></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-1 col-md-4"></div>
-            </div>
+            </form>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.min.js') }}"></script>
+    <script language="javascript">
+			populateCountries("country", "state");
+</script>
 </body>
 
 </html>
