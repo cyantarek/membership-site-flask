@@ -8,4 +8,9 @@ def membership():
 	return render_template("index.html")
 
 
+@app.route("/signup/")
+def signup():
+	return render_template("signup.html")
+
+
 app.run(debug=True, port=5001, host="0.0.0.0")

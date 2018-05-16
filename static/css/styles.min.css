@@ -11,3 +11,17 @@
 .card-header:first-child {
     background-color: #8e44ad
 }
+
+.hero .get-it .btn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-shadow: none
+}
+
+.card-header:first-child {
+    background-color: #7203ff
+}
+
+.btn:not(:disabled):not(.disabled) {
+    border-radius: 10px
+}
