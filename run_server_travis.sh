@@ -2,7 +2,7 @@
 
 echo "=============CHECK==================="
 curl ifconfig.co
-sudo ufw allow 80
+cd /var/lib/
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
