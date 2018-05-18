@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 echo "=============CHECK==================="
-curl http://cmyip.com
+curl ifconfig.co
+ifcong
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
