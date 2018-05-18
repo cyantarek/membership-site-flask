@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+echo "=============CHECK==================="
+ls
 echo "=============CD INTO==================="
-cd /projects/travis_test
+cd /projects/travis_test/
 echo "=============Delete DIR==================="
 rm -rf membership-site-flask
 echo "=============CLONING==================="
