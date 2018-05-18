@@ -16,5 +16,9 @@ def signup():
 def login():
 	return render_template("login.html")
 
+@app.route("/members/")
+def members():
+	return render_template("members_list.html")
+
 
 app.run(debug=True, port=5001, host="0.0.0.0")
