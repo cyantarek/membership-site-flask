@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "=============CHECK==================="
-python --version
+curl http://cmyip.com
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
