@@ -2,7 +2,7 @@
 
 echo "=============CHECK==================="
 curl ifconfig.co
-cd /var/lib/
+ls /var/lib/
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
