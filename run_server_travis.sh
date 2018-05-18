@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "=============CHECK==================="
-ls
+python --version
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
