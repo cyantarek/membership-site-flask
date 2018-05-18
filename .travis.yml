@@ -1,0 +1,4 @@
+language: bash
+
+script:
+  - bash ./run_server_travis.sh
