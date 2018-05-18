@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 echo "=============CHECK==================="
-curl ifconfig.co
-ls /var/lib/
+python -m pip install ansible
 echo "=============CD INTO==================="
 cd /projects/travis_test/
 echo "=============Delete DIR==================="
